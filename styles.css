@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -28,10 +27,15 @@ header ul {
     margin-right: 8em;
 }
 
+ul li a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
 .hero-bg {
     display: flex;
     gap: 10em;
-    padding: 0 3em 2em 10em;
+    padding: 0 3em 8em 10em;
     background-color: #1F2937;
     justify-content: space-between;
 }
@@ -70,14 +74,16 @@ h2 {
 }
 
 section{
-    margin: 0 20em;
+    margin: 0 20em 10em;
 }
 
 section .container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 5em;
     margin-top: 3em;
+    margin-bottom: -5em;
 }
 
 .info-container {
@@ -96,4 +102,72 @@ section .container {
 
 .info-container p {
     text-align: center;
+}
+
+article {
+    background-color: #E5E7EB;
+    padding: 3em 20% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+article p {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.author {
+    font-weight: bold;
+    align-self: end;
+}
+
+.call {
+    background-color: #3882f6;
+    margin: 5em 20em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8em;
+}
+
+.left p {
+    color: white;
+}
+
+.left .header {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.left p.text {
+    margin-top: -15px;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hero-bg button {
+    border: none;
 }
